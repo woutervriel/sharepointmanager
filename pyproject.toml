@@ -1,3 +1,7 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
 [project]
 name = "sharepoint-manager"
 version = "0.1.0"
@@ -8,7 +12,7 @@ license = { text = "MIT" }
 authors = [
     { name = "Wouter van Riel", email = "wouter.van.riel@infralytics.org" }
 ]
-keywords = ["sharepoint", "office365"]
+keywords = ["sharepoint", "office365", "file-management", "automation", "python"]
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Intended Audience :: Developers",
@@ -42,6 +46,9 @@ test = [
 Homepage = "https://github.com/yourusername/sharepoint-manager"
 Repository = "https://github.com/yourusername/sharepoint-manager.git"
 "Bug Tracker" = "https://github.com/yourusername/sharepoint-manager/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["sharepointmanager"]
 
 [tool.uv]
 dev-dependencies = [
