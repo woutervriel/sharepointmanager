@@ -1,0 +1,75 @@
+[project]
+name = "sharepoint-manager"
+version = "0.1.0"
+description = "A tool to manage SharePoint files and folders."
+readme = "README.md"
+requires-python = ">=3.13"
+license = { text = "MIT" }
+authors = [
+    { name = "Wouter van Riel", email = "wouter.van.riel@infralytics.org" }
+]
+keywords = ["sharepoint", "office365"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.13",
+    "Operating System :: OS Independent",
+    "Topic :: Office/Business",
+]
+dependencies = [
+    "msal>=1.33.0",
+    "office365-rest-python-client>=2.6.2",
+    "python-dotenv>=1.2.1",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.4.2",
+    "pytest-cov>=7.0.0",
+    "coverage>=7.11.0",
+]
+
+[dependency-groups]
+test = [
+    "pytest>=8.4.2",
+    "pytest-cov>=7.0.0",
+    "coverage>=7.11.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/yourusername/sharepoint-manager"
+Repository = "https://github.com/yourusername/sharepoint-manager.git"
+"Bug Tracker" = "https://github.com/yourusername/sharepoint-manager/issues"
+
+[tool.uv]
+dev-dependencies = [
+    "pytest>=8.4.2",
+    "pytest-cov>=7.0.0",
+    "coverage>=7.11.0",
+    "ruff>=0.14.3",
+]
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+testpaths = ["tests"]
+python_files = ["test_*.py", "*_test.py"]
+addopts = "--cov=src --cov-report=html --cov-report=term-missing"
+
+[tool.coverage.run]
+source = ["src"]
+omit = ["*/tests/*", "*/__pycache__/*"]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "if __name__ == .__main__.:",
+    "raise AssertionError",
+    "raise NotImplementedError",
+    "if TYPE_CHECKING:",
+    "if 0:",
+    "if False:",
+]
+
