@@ -4,7 +4,7 @@ Tests for folder operations (download, delete, move, search)
 import pytest
 from unittest.mock import Mock, patch
 from requests.exceptions import HTTPError
-from sharepointmanager.sharepoint import SharePointManager, ItemInfo
+from sharepointer.sharepoint import SharePointManager, ItemInfo
 
 
 class TestSearchFoldersByPrefix:

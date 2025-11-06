@@ -3,7 +3,7 @@ Tests for file search operations
 """
 import pytest
 from unittest.mock import Mock, patch
-from sharepointmanager.sharepoint import SharePointManager, ItemInfo
+from sharepointer.sharepoint import SharePointManager, ItemInfo
 
 
 class TestSearchFilesBySuffix:

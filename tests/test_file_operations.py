@@ -5,7 +5,7 @@ import pytest
 from unittest.mock import Mock, patch
 from io import BytesIO
 from requests.exceptions import HTTPError
-from sharepointmanager.sharepoint import SharePointManager
+from sharepointer.sharepoint import SharePointManager
 
 
 class TestDownloadFile:

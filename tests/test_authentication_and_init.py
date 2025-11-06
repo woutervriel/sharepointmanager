@@ -3,7 +3,7 @@ Tests for SharePointManager initialization and authentication
 """
 import pytest
 from unittest.mock import Mock, patch
-from sharepointmanager.sharepoint import SharePointManager
+from sharepointer.sharepoint import SharePointManager
 
 
 class TestInitialization:

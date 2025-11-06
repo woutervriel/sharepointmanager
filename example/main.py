@@ -2,7 +2,7 @@ import os
 
 from dotenv import load_dotenv
 
-from sharepointmanager.sharepoint import SharePointManager
+from sharepointer.sharepoint import SharePointManager
 
 load_dotenv()
 

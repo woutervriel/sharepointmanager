@@ -2,7 +2,7 @@
 Tests for URL helper methods
 """
 from unittest.mock import Mock, patch
-from sharepointmanager.sharepoint import SharePointManager
+from sharepointer.sharepoint import SharePointManager
 
 
 class TestURLHelpers:

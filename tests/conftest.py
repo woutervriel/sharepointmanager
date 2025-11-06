@@ -40,7 +40,7 @@ def config():
 def mock_sharepoint_manager(config):
     """Fixture that provides a mocked SharePointManager instance"""
     with patch('sharepointmanager.sharepoint.msal.ConfidentialClientApplication') as mock_auth:
-        from sharepointmanager.sharepoint import SharePointManager
+        from sharepointer.sharepoint import SharePointManager
 
         # Configure the mock to return a proper access token
         mock_app = Mock()
@@ -99,7 +99,7 @@ def mock_requests_delete():
 @pytest.fixture
 def sample_file_info():
     """Fixture providing sample FileInfo data"""
-    from sharepointmanager.sharepoint import FileInfo
+    from sharepointer.sharepoint import FileInfo
     return FileInfo(
         name="test_file.txt",
         path="folder/test_file.txt",
@@ -113,7 +113,7 @@ def sample_file_info():
 @pytest.fixture
 def sample_folder_info():
     """Fixture providing sample FolderInfo data"""
-    from sharepointmanager.sharepoint import FolderInfo
+    from sharepointer.sharepoint import FolderInfo
     return FolderInfo(
         name="test_folder",
         path="folder/test_folder",

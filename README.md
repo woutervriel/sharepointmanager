@@ -84,7 +84,7 @@ CLIENT_SECRET=your-client-secret
 ## Quick Start
 
 ```python
-from sharepointmanager.sharepoint import SharePointManager
+from sharepointer.sharepoint import SharePointManager
 import os
 from dotenv import load_dotenv
 
@@ -456,7 +456,7 @@ for file in files:
 ## Complete Example
 
 ```python
-from sharepointmanager.sharepoint import SharePointManager
+from sharepointer.sharepoint import SharePointManager
 import os
 from dotenv import load_dotenv
 

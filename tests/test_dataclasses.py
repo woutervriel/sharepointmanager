@@ -2,7 +2,7 @@
 Tests for ItemInfo dataclass (FileInfo and FolderInfo are aliases)
 """
 from dataclasses import asdict
-from sharepointmanager.sharepoint import ItemInfo
+from sharepointer.sharepoint import ItemInfo
 
 
 class TestFileInfo:
