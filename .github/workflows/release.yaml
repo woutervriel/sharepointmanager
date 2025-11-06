@@ -9,7 +9,7 @@ on:
 
 
 env:
-  PACKAGE_NAME: "sharepointer"
+  PACKAGE_NAME: "sharepointmanager"
   OWNER: "woutervriel"
 
 jobs:
