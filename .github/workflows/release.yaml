@@ -11,6 +11,7 @@ on:
 env:
   PACKAGE_NAME: "sharepointmanager"
   OWNER: "woutervriel"
+  TAP_NAME: "woutervriel"
 
 jobs:
   details:
