@@ -48,7 +48,7 @@ Repository = "https://github.com/woutervriel/sharepointmanager.git"
 "Bug Tracker" = "https://github.com/woutervriel/sharepointmanager/issues"
 
 [tool.hatch.build.targets.wheel]
-packages = ["sharepointmanager"]
+packages = ["sharepointer"]
 
 [tool.uv]
 dev-dependencies = [
